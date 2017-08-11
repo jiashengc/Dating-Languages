@@ -4,5 +4,5 @@ screen town:
         hover "small-lake-town-selected.png"
 
         # Locations
-        hotspot (830, 380, 105, 75) clicked Jump ("choice")
+        hotspot (830, 380, 105, 75) clicked Jump ("town_centre")
 

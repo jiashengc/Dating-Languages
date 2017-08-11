@@ -10,6 +10,7 @@ image bg town = "anime-town.jpg"
 
 label start:
 
+    # Initialize variables
     python:
         cp = Waifu("C++", "#004481")
         js = Waifu("JavaScript", "#f7df1e")
