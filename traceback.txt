@@ -1,0 +1,85 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While loading <'Image' u'small-lake-town.jpg'>:
+  File "game/script.rpy", line 46, in script
+    call screen town
+  File "renpy/common/000statements.rpy", line 471, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+IOError: Couldn't find file 'small-lake-town.jpg'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 46, in script
+    call screen town
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\ast.py", line 1706, in execute
+    self.call("execute")
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\ast.py", line 1724, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\statements.py", line 145, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 471, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\exports.py", line 2526, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\ui.py", line 285, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\core.py", line 2526, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\core.py", line 2883, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\core.py", line 1955, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 427, in renpy.display.render.render_screen (gen\renpy.display.render.c:6806)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\screen.py", line 623, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\im.py", line 473, in render
+    im = cache.get(self)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\im.py", line 200, in get
+    surf = image.load()
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\display\im.py", line 524, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\loader.py", line 543, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'small-lake-town.jpg'.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.12.4.2187
+Dating Languages 1.0
