@@ -15,8 +15,8 @@ init python:
                 'Afternoon',#1
                 'Evening'   #2
                 ]
-            self.currentDay = 1
-            self.currentTime = 0
+            self.currentDay = 4
+            self.currentTime = 2
 
         def getDay(self):
             return self.days[self.currentDay]
