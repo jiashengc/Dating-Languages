@@ -1,9 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
-log.txt
-error.txt
-traceback.txt
-**/cache
-**/saves
-*.rpyc
-**/.idea
-.idea/workspace.xml
+# log.txt
+# error.txt
+# traceback.txt
+# game/cache
+# game/saves
+# *.rpyc
+# **/.idea
+# .idea/workspace.xml

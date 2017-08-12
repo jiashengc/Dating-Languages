@@ -26,6 +26,7 @@ style gui_text:
 
 
 style button:
+    #background '#ffffff'
     properties gui.button_properties("button")
 
 style button_text is gui_text:
@@ -332,6 +333,7 @@ style navigation_button_text is gui_button_text
 
 style navigation_button:
     size_group "navigation"
+    background "#ff00ff" 
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:
