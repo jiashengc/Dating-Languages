@@ -1,11 +1,9 @@
 init python:
     class Waifu:
         
-        # standard instantiation, default fields
-        def __init__(self, name, colour):
-            
     class Waifu(ADVCharacter):
         """docstring for Waifu"""
+
         def __init__(self, name, textColour, birthday, favColour):
             super(Waifu, self).__init__(name, color=textColour)
             self.birthday = birthday
@@ -20,13 +18,13 @@ init python:
             self.affection = 0
             # Anger level towards user
             self.anger = 0
-            
             self.ideal_gifts = []
             self.received_gifts= []
             
 
         # custom fields for instantiation
-        def __init__(self, name, colour, anger, psycho, happy, affection):
+        def __init__(self, name, textColour, anger, psycho, happy, affection):
+            super(Waifu, self).__init__(name, color=textColour)
             self.c = Character(name, color=colour)
             self.anger = anger
             self.psycho = psycho
@@ -51,9 +49,7 @@ init python:
         # adds items to received_gifts
         def receiveGift(self, gift):
             self.received_gifts.append(gift)
-            
             self.affection += 10
-            
             if gift in ideal_gifts:
                 self.affection += 20
 
