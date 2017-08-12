@@ -1,5 +1,5 @@
-python init: 
-    class QnResponse: 
+init python:
+    class QnResponse:
         """
         Responses are used with responses because I don't know how
         else to assign a weight to responses.

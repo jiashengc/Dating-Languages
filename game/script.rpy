@@ -50,9 +50,9 @@ label choice:
             jump end
 
 label next_day:
-    call screen town
-
     $ day.addTime()
+
+    call screen town
 
     jump choice
 

@@ -1,6 +1,4 @@
 init python:
-    class Waifu:
-        
     class Waifu(ADVCharacter):
         """docstring for Waifu"""
 
@@ -9,7 +7,7 @@ init python:
             self.birthday = birthday
             self.favColour = favColour
             # Pretty self explanatory
-            self.psycho = random.randint(0, 100)
+            # self.psycho = random.randint(0, 100)
             # Overall happiness 
             # 0 = depressed, 100 = ecstatic
             # 50 = fine/neutral
@@ -23,15 +21,15 @@ init python:
             
 
         # custom fields for instantiation
-        def __init__(self, name, textColour, anger, psycho, happy, affection):
-            super(Waifu, self).__init__(name, color=textColour)
-            self.c = Character(name, color=colour)
-            self.anger = anger
-            self.psycho = psycho
-            self.happy = happy
-            self.affection = affection
-            self.ideal_gifts = []
-            self.received_gifts= []
+        #def __init__(self, name, textColour, anger, psycho, happy, affection):
+        #    super(Waifu, self).__init__(name, color=textColour)
+        #    self.c = Character(name, color=colour)
+        #    self.anger = anger
+        #    self.psycho = psycho
+        #    self.happy = happy
+        #    self.affection = affection
+        #    self.ideal_gifts = []
+        #    self.received_gifts= []
 
             
         # adds affection level
@@ -55,6 +53,7 @@ init python:
 
         # Asks question to user and displays possible responses
         def askQuestion(self, question):
+            pass
             # TODO: add implementation
 
             
