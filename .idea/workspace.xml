@@ -5,34 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1212fc6f-7516-4e15-8a97-4c98f9d12b68" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/cache/bytecode.rpyb" afterPath="$PROJECT_DIR$/game/cache/bytecode.rpyb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/cache/screens.rpyb" afterPath="$PROJECT_DIR$/game/cache/screens.rpyb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/gui.rpyc" afterPath="$PROJECT_DIR$/game/gui.rpyc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/options.rpyc" afterPath="$PROJECT_DIR$/game/options.rpyc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/_reload-2-LT1.save" afterPath="$PROJECT_DIR$/game/saves/_reload-2-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-1-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-1-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-10-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-10-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-2-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-2-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-3-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-3-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-4-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-4-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-5-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-5-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-6-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-6-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-7-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-7-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-8-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-8-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-9-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-9-LT1.save" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/persistent" afterPath="$PROJECT_DIR$/game/saves/persistent" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/screens.rpyc" afterPath="$PROJECT_DIR$/game/screens.rpyc" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/bytecode.rpyb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-0178fedd914e9adffcb8a9ee538ddeb1-38911452.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-3ad766287b58ae4be5bb9b6bf81d2d9d-38911452.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-4a3cc1452f9e0ad1a4d62a0c6cd26c7d-38911452.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-5da00cfed7b00ddc4c5eba2b1a4718e6-38911452.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-651a722ab00b1be634f281dda58a1d76-38911452.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-71372f20bec2338fb73812a9f527df92-759351a0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-75d5a20080bc28178e39a2cc7b782bfc-1351d166.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-75d5a20080bc28178e39a2cc7b782bfc-2450f7f1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-75d5a20080bc28178e39a2cc7b782bfc-38911452.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-77ae56c268dfdc4d4fc0b2096e7cfeab-38911452.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-8258f4a89aa713b3a810b091ce807b3c-38911452.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-d11478fb25408e004fbc73f9fb9a0495-759351a0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-e179a9cdfe28b67f6dee9c32880b781d-2450f7f1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/im-e179a9cdfe28b67f6dee9c32880b781d-3d64d468.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/pyanalysis.rpyb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/cache/screens.rpyb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/_reload-2-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-1-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-10-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-2-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-3-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-4-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-5-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-6-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-7-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-8-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/auto-9-LT1.save" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game/saves/persistent" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/script.rpyc" afterPath="$PROJECT_DIR$/game/script.rpyc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/src/classes/dayClass.rpyc" afterPath="$PROJECT_DIR$/game/src/classes/dayClass.rpyc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/src/classes/waifuClass.rpyc" afterPath="$PROJECT_DIR$/game/src/classes/waifuClass.rpyc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/src/locations/townCentre.rpyc" afterPath="$PROJECT_DIR$/game/src/locations/townCentre.rpyc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tl/None/common.rpymc" afterPath="$PROJECT_DIR$/game/tl/None/common.rpymc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/errors.txt" afterPath="$PROJECT_DIR$/errors.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/script.rpy" afterPath="$PROJECT_DIR$/game/script.rpy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/src/classes/waifuClass.rpy" afterPath="$PROJECT_DIR$/game/src/classes/waifuClass.rpy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/src/locations/cafeLocation.rpy" afterPath="$PROJECT_DIR$/game/src/locations/cafeLocation.rpy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traceback.txt" afterPath="$PROJECT_DIR$/traceback.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,48 +55,66 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="script.rpy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/script.rpy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="townScreen.rpy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/src/screens/townScreen.rpy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="waifuClass.rpy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/src/classes/waifuClass.rpy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-286">
-              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.43234932">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file leaf-file-name="script.rpy" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/game/script.rpy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="townScreen.rpy" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/game/src/screens/townScreen.rpy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="264">
+                  <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="parkLocation.rpy" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/game/src/locations/parkLocation.rpy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="22">
+                  <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="cafeLocation.rpy" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/game/src/locations/cafeLocation.rpy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="176">
+                  <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -114,7 +140,6 @@
         <option value="$PROJECT_DIR$/game/src/waifuClass.rpy" />
         <option value="$PROJECT_DIR$/game/src/townScreen.rpy" />
         <option value="$PROJECT_DIR$/game/src/locations.rpy" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/game/src/locations/party.rpy" />
         <option value="$PROJECT_DIR$/game/src/locations/partyLocation.rpy" />
         <option value="$PROJECT_DIR$/game/src/locations/concertLocation.rpy" />
@@ -126,8 +151,9 @@
         <option value="$PROJECT_DIR$/game/src/classes/question.rpy" />
         <option value="$PROJECT_DIR$/game/src/classes/waifuClass.rpy" />
         <option value="$PROJECT_DIR$/game/script.rpy" />
-        <option value="$PROJECT_DIR$/game/src/locations/cafeLocation.rpy" />
         <option value="$PROJECT_DIR$/game/src/screens/townScreen.rpy" />
+        <option value="$PROJECT_DIR$/game/src/locations/cafeLocation.rpy" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -422,11 +448,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1401375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1401375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -639,6 +665,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,6 +711,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -740,22 +768,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game/src/classes/locationClass.rpy" />
-    <entry file="file://$PROJECT_DIR$/game/src/classes/dayClass.rpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game/src/locations/townCentre.rpy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -767,22 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/src/classes/waifuClass.rpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/script.rpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,24 +804,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/src/locations/parkLocation.rpy">
+    <entry file="file://$PROJECT_DIR$/game/src/classes/waifuClass.rpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/src/locations/cafeLocation.rpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="-174">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/src/screens/townScreen.rpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="264">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/script.rpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/src/classes/dayClass.rpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/src/locations/parkLocation.rpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/src/locations/cafeLocation.rpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

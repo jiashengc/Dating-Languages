@@ -3,7 +3,7 @@
 log.txt
 error.txt
 traceback.txt
-
-game/cache/*
-game/saves/*
-*.save
+**/cache
+**/saves
+*.rpyc
+.idea/workspace.xml
