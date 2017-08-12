@@ -8,4 +8,4 @@ label room_location:
 
     "Time to get some mad pussy"
 
-    call screen town
+    call screen qut

@@ -1,4 +1,4 @@
-image bg hackathon_background = "anime-hackathon.png"
+image bg hackathon_background = "qut-hackathon.png"
 
 label hackathon_location:
 
@@ -11,3 +11,5 @@ label hackathon_location:
 label hackathon_location_day:
 
     "Hey welcome"
+
+    call screen qut

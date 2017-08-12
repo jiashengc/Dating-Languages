@@ -1,4 +1,4 @@
-image bg library_background = "anime-library.png"
+image bg library_background = "qut-library.png"
 
 label library_location:
 

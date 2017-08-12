@@ -6,7 +6,7 @@ screen qut:
         # Locations
         hotspot (825, 65, 150, 80) clicked Jump ("kidney_location")
         hotspot (315, 311, 90, 60) clicked Jump ("hackathon_location")
-        hotspot (665, 256, 110, 60) clicked Jump ("library_location")
+        hotspot (665, 256, 110, 125) clicked Jump ("library_location")
         hotspot (980, 220, 210, 220) clicked Jump ("science_location")
         hotspot (435, 585, 225, 90) clicked Jump ("computer_location")
 
