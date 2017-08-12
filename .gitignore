@@ -6,3 +6,4 @@ traceback.txt
 
 game/cache/*
 game/saves/*
+*.save
