@@ -6,3 +6,4 @@ traceback.txt
 **/saves
 *.rpyc
 **/.idea
+.idea/workspace.xml

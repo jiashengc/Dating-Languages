@@ -2,11 +2,14 @@ image bg cafe_background = "anime-cafe.png"
 
 label cafe_location:
 
-    scene bg park
+    scene bg cafe_background
 
     $ currentDay = day.getDay()
 
-    if day.currentDay == 1:
-        jump park_locatio
+    jump cafe_location_day
 
-    call screen town
+label cafe_location_day:
+
+    "It's [currentDay] today"
+
+    jump location_end

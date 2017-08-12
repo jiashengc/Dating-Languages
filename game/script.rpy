@@ -72,11 +72,7 @@ label choice:
             jump end
 
 label next_day:
-    $ day.addTime()
-
     call screen town
-
-    jump choice
 
 label choose_CP:
 
@@ -119,6 +115,17 @@ label cp_correct_birthday:
 label cp_wrong_birthday:
     cp "No, Baka! >:("
     jump next_day
+
+label location_end:
+    $ prevDay = day.getDay()
+    $ day.addTime()
+
+    if (prevDay == day.getDay()):
+        call screen town
+    else:
+        jump room_location
+
+
 
 label end:
     # This ends the game.
