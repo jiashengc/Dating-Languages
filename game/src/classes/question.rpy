@@ -1,6 +1,4 @@
-from qnresponse import QnResponse
-
-init python: 
+init python:
     class Question: 
         """
         Question class is a model of questions that can be asked by
