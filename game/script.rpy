@@ -90,7 +90,14 @@ label next_time:
 
 #     "It's time to pick your favourite language!"
 
+<<<<<<< HEAD
 #     cp "Pick me you bitc! Affection: [cp.affection]"
+=======
+
+label next_day:
+    jump hackathon_location
+
+>>>>>>> 6bc4f7efe30c24253caeed9b254068bfd10fa143
 
 #     js "I'm JavaScript ahjaajahajha! Affection: [js.affection]"
 
