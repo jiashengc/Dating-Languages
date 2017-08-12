@@ -324,7 +324,7 @@ screen navigation():
             textbutton _("Help") action ShowMenu("help")
 
             ## The quit button is banned on iOS and unnecessary on Android.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action Quit(confirm=False)
 
 
 style navigation_button is gui_button
