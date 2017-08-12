@@ -53,4 +53,10 @@ init python:
             if gift in ideal_gifts:
                 self.affection += 20
 
-        
+        # Asks question to user and displays possible responses
+        def askQuestion(self, question):
+            # TODO: add implementation
+
+            
+
+        # def answerIsCorrect(question, response):

@@ -14,14 +14,19 @@ init python:
         def __init__(self, qn, responses, importance):
             self.qn = qn
             self.responses = responses
+            self.response_weights = {}
+            for response in self.responses:
+                response.setWeight(responses.index(response)+1)
+                response_weights[response] = response.getWeight()
             self.importance = importance
         
         def getImportance(self):
             return self.importance
         
         def getAvailableResponses(self):
-            dict = {}
-            for response in self.responses:
-                response.setWeight(responses.index(response))
-                dict[response] = response.getWeight()
-            return dict
+            return self.responses
+
+        def __str__(self):
+            str = "Question: " + qn + "\n"
+            for response in self.response_weights.keys():
+                str+="\t " + (self.response_weights.index(response)+1)+". " + response + " (" + self.response_weights[response]+ ")"
