@@ -12,8 +12,8 @@ label start:
 
     # Initialize variables
     python:
-        cp = Waifu("C++", "#004481")
-        js = Waifu("JavaScript", "#f7df1e")
+        cp = Waifu("C++", "#004481", "20 March, 1970", "Blue")
+        js = Waifu("JavaScript", "#f7df1e", "7 December, 1990", "White")
         day = Day()
 
     scene bg town
@@ -28,9 +28,9 @@ label choice:
 
     "It's time to pick your favourite language!"
 
-    cp.c "Pick me you bitch! Affection: [cp.affection]"
+    cp "Pick me you bitc! Affection: [cp.affection]"
 
-    js.c "I'm JavaScript ahjaajahajha! Affection: [js.affection]"
+    js "I'm JavaScript ahjaajahajha! Affection: [js.affection]"
 
     menu:
         "Choose C++":
@@ -57,18 +57,18 @@ label choose_CP:
 
     $ dayName = day.getDay()
     $ timeName = day.getTime()
-    cp.c "Woohoo you choose me!"
+    cp "Woohoo you choose me!"
 
-    js.c "Gue gue gue gue it's [dayName] and it's [timeName]"
+    js "Gue gue gue gue it's [dayName] and it's [timeName]"
 
     jump next_day
 
 label choose_JS:
     $ dayName = day.getDay()
     $ timeName = day.getTime()
-    js.c "Wooo it's [dayName] and it's [timeName]"
+    js "Wooo it's [dayName] and it's [timeName]"
 
-    cp.c "Okay"
+    cp "Okay"
 
     jump next_day
 

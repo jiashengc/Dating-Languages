@@ -3,7 +3,13 @@ init python:
         
         # standard instantiation, default fields
         def __init__(self, name, colour):
-            self.c = Character(name, color=colour)
+            
+    class Waifu(ADVCharacter):
+        """docstring for Waifu"""
+        def __init__(self, name, textColour, birthday, favColour):
+            super(Waifu, self).__init__(name, color=textColour)
+            self.birthday = birthday
+            self.favColour = favColour
             # Pretty self explanatory
             self.psycho = random.randint(0, 100)
             # Overall happiness 
