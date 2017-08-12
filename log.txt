@@ -1,4 +1,4 @@
-Sat Aug 12 11:33:24 2017
+Sat Aug 12 13:07:53 2017
 Linux-4.12.4-1-ARCH-x86_64-with-glibc2.2.5
 Ren'Py 6.99.12.4.2187
  
@@ -6,11 +6,11 @@ Ren'Py 6.99.12.4.2187
 Bootstrap to the start of init.init took 0.08s
 Early init took 0.01s
 Loader init took 0.01s
-Loading error handling took 0.18s
-Loading script took 3.31s
+Loading error handling took 0.19s
+Loading script took 3.39s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.33s
+Running init code took 0.34s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -19,7 +19,7 @@ Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.27s
+Creating interface object took 0.28s
 Cleaning stores took 0.00s
 Init translation took 0.06s
 Build styles took 0.01s
@@ -35,7 +35,7 @@ Interface start took 0.01s
 
 primary display bounds: (0, 0, 1366, 768)
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Screen sizes: virtual=(1280, 720) physical=(681, 383) drawable=(681, 383)
 Vendor: 'Intel Open Source Technology Center'
 Renderer: 'Mesa DRI Intel(R) Sandybridge Mobile '
 Version: '3.0 Mesa 17.1.6'
@@ -264,22 +264,15 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 4.84759902954s
+Total time until interface ready: 4.95901203156s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
 
 primary display bounds: (0, 0, 1366, 768)
 Windowed mode.
 Screen sizes: virtual=(1280, 720) physical=(1364, 742) drawable=(1364, 742)
-- Frame drawn at 0.039474 seconds.
-- Frame drawn at 0.044795 seconds.
-- Frame drawn at 0.057232 seconds.
-- Frame drawn at 0.066103 seconds.
-- 0.066103 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.20s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+- Frame drawn at 0.037236 seconds.
+- Frame drawn at 0.044114 seconds.
+- Frame drawn at 0.056208 seconds.
+- Frame drawn at 0.064368 seconds.
+- 0.064368 seconds to render 5 frames.

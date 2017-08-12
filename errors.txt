@@ -2,20 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 30: expected statement.
-    cp.addAffection(1)
-                      ^
-
-File "game/script.rpy", line 31: expected statement.
-    js.addAffection(-1)
-                       ^
-
-File "game/script.rpy", line 35: expected statement.
-    cp.addAffection(-1)
-                       ^
-
-File "game/script.rpy", line 36: expected statement.
-    js.addAffection(1)
-                      ^
+File "game/script.rpy", line 3: python block expects a non-empty block.
+    init python:
+                ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187
