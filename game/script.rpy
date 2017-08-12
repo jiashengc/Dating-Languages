@@ -71,8 +71,10 @@ label choice:
         "Choose to stop choosing":
             jump end
 
+
 label next_day:
-    call screen town
+    jump party_location
+
 
 label choose_CP:
 
