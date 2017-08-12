@@ -2,6 +2,7 @@
 
 init python:
     mcName = ""
+    girlsMet = 0
 
 define player = DynamicCharacter("mcName")
 
@@ -16,116 +17,157 @@ label start:
     # Initialize variables
     python:
         cp = Waifu("C++", "#004481", "20 March, 1970", "Blue", "Coke", "Gnu", "Memes", "Princess")
-        js = Waifu("JavaScript", "#f7df1e", "7 December, 1990", "White", "Coke", "Gnu", "Memes", "Princess")
+        #js = Waifu("JavaScript", "#f7df1e", "7 December, 1990", "White", "Coke", "Gnu", "Memes", "Princess")
         #py = Waifu("Python", "#35709f", "20 February 1991", "Yellow")
         #ph = Waifu("PHP", "#7486bd", "8 June 1995", "Green")
         #jv = Waifu("java", "#e52c2a", "23 May 1995", "Red")
         day = Day()
 
     #Name the main character
-    jump nameMC
+    #jump nameMC
 
-    scene bg town
-    show eileen happy
+    jump hackathon_girls
 
-    jump choice
+label nameMC(girl, girl_img):
+    show image girl_img
 
-label nameMC:
+    girl "Hi! I haven't met you before, what's your name?"
     $ mcName = renpy.input("What is your name?", length=16)
 
     if mcName == "":
         "Please enter a name"
         jump nameMC
     $ mcName = mcName.rstrip().title()
+    
+    girl "Nice to meet you, [mcName]"
+    hide girl_img
+    return
 
-    "[mcName]? Are you sure that's your name?"
-    menu:
-        "No":
-            jump nameMC
-        "Yes":
-            pass
-    player "Yep, [mcName] is my name."
+label hackathon_girls:
+    cp "Your count: [girlsMet]"
 
-label choice:
+    call screen hackathon_girls
 
-    scene bg town
-    show eileen happy
+    $ _name = _return.name
+        
+    if girlsMet == 0:
+        call nameMC(_return, "[_name].png")
 
-    "It's time to pick your favourite language!"
-
-    cp "Pick me you bitc! Affection: [cp.affection]"
-
-    js "I'm JavaScript ahjaajahajha! Affection: [js.affection]"
-
-    menu:
-        "Choose C++":
-            $ cp.addAffection(1)
-            $ js.addAffection(-1)
-            jump choose_CP
-
-        "Choose JavaScript":
-            $ cp.addAffection(-1)
-            $ js.addAffection(1)
-            jump choose_JS
-
-        "Choose to stop choosing":
-            jump end
-
-label next_day:
-    call screen town
-
-label choose_CP:
-
-    $ dayName = day.getDay()
-    $ timeName = day.getTime()
-    cp "Woohoo you choose me!"
-
-    if cp.playerKnows["birthday"]:
-        menu:
-            cp "Do you remember when my birthday is?"
-            "Yes":
-                jump cp_correct_birthday
-            "No":
-                jump cp_wrong_birthday
-            "No":
-                jump cp_wrong_birthday
-            "No":
-                jump cp_wrong_birthday
+    if _name == "C++":
+        if girlsMet != 0:
+            cp "Hey, you're [mcName], right?"
+        cp "Memes :^)"
+    elif _name == "JavaScript":
+        pass
+    elif _name == "Python":
+        pass
+    elif _name == "PHP":
+        pass
+    elif _name == "Java":
+        pass
     else:
-        cp "My birthday is [cp.birthday]"
-        $ cp.playerKnows["birthday"] = True
+        "Something has went wrong"
+        jump hackathon_girls
 
-    js "Gue gue gue gue it's [dayName] and it's [timeName]"
+    $ girlsMet += 1
 
-    jump next_day
+    if girlsMet != 5:
+        jump hackathon_girls
+    else:
+        "Now you've met everyone."
+        jump next_time
 
-label choose_JS:
-    $ dayName = day.getDay()
-    $ timeName = day.getTime()
-    js "Wooo it's [dayName] and it's [timeName]"
 
-    cp "Okay"
-
-    jump next_day
-
-label cp_correct_birthday:
-    cp "Yes, that is correct"
-    jump next_day
-
-label cp_wrong_birthday:
-    cp "No, Baka! >:("
-    jump next_day
-
-label location_end:
-    $ prevDay = day.getDay()
+label next_time:
     $ day.addTime()
-
-    if (prevDay == day.getDay()):
-        call screen town
-    else:
-        jump room_location
+    call screen qut
 
 
+# label choice:
+
+#     scene bg town
+#     show eileen happy
+
+#     "It's time to pick your favourite language!"
+
+#     cp "Pick me you bitc! Affection: [cp.affection]"
+
+#     js "I'm JavaScript ahjaajahajha! Affection: [js.affection]"
+
+#     call test("Hello")
+
+#     menu:
+#         "Choose C++":
+#             $ cp.addAffection(1)
+#             $ js.addAffection(-1)
+#             jump choose_CP
+
+#         "Choose JavaScript":
+#             $ cp.addAffection(-1)
+#             $ js.addAffection(1)
+#             jump choose_JS
+
+#         "Choose to stop choosing":
+#             jump end
+
+
+# label test(words):
+#     cp "[words]"
+
+
+# label next_day:
+#     call screen town
+
+# label choose_CP:
+
+#     $ dayName = day.getDay()
+#     $ timeName = day.getTime()
+#     cp "Woohoo you choose me!"
+
+#     if cp.playerKnows["birthday"]:
+#         menu:
+#             cp "Do you remember when my birthday is?"
+#             "Yes":
+#                 jump cp_correct_birthday
+#             "No":
+#                 jump cp_wrong_birthday
+#             "No":
+#                 jump cp_wrong_birthday
+#             "No":
+#                 jump cp_wrong_birthday
+#     else:
+#         cp "My birthday is [cp.birthday]"
+#         $ cp.playerKnows["birthday"] = True
+
+#     js "Gue gue gue gue it's [dayName] and it's [timeName]"
+
+#     jump next_day
+
+# label choose_JS:
+#     $ dayName = day.getDay()
+#     $ timeName = day.getTime()
+#     js "Wooo it's [dayName] and it's [timeName]"
+
+#     cp "Okay"
+
+#     jump next_day
+
+# label cp_correct_birthday:
+#     cp "Yes, that is correct"
+#     jump next_day
+
+# label cp_wrong_birthday:
+#     cp "No, Baka! >:("
+#     jump next_day
+
+# label location_end:
+#     $ prevDay = day.getDay()
+#     $ day.addTime()
+
+#     if (prevDay == day.getDay()):
+#         call screen town
+#     else:
+#         jump room_location
 
 label end:
     # This ends the game.

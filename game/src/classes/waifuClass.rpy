@@ -39,7 +39,5 @@ init python:
             pass
             # TODO: add implementation
 
-
-
         # def answerIsCorrect(question, response):
 
