@@ -1,4 +1,4 @@
-﻿I'm sorry, but an uncaught exception occurred.
+﻿﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
   File "game/script.rpy", line 37, in script

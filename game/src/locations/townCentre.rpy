@@ -6,11 +6,11 @@ label town_centre:
     jump town_centre_chat
 
 label town_centre_chat:
-    js.c "Gyaaaa?"
+    js "Gyaaaa?"
 
     "Gyaaaa?"
 
-    js.c "Nepppgyaaaaa!"
+    js "Nepppgyaaaaa!"
 
     "Eeeekk!?"
 
