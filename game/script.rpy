@@ -73,7 +73,7 @@ label choice:
 
 
 label next_day:
-    jump party_location
+    jump hackathon_location
 
 
 label choose_CP:
