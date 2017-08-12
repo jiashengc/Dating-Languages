@@ -10,7 +10,7 @@ init python:
             self.hobby = hobby
             self.occupation = occupation
             self.affection = 0
-            
+
             self.playerKnows = {
                 'birthday': False,
                 'favColour': False,
@@ -22,3 +22,24 @@ init python:
 
         def addAffection(self, amount):
             self.affection += amount;
+
+        # adds items to ideal gift
+        def addIdealGift(self, gift):
+            self.ideal_gifts.append(gift)
+
+        # adds items to received_gifts
+        def receiveGift(self, gift):
+            self.received_gifts.append(gift)
+            self.affection += 10
+            if gift in ideal_gifts:
+                self.affection += 20
+
+        # Asks question to user and displays possible responses
+        def askQuestion(self, question):
+            pass
+            # TODO: add implementation
+
+
+
+        # def answerIsCorrect(question, response):
+

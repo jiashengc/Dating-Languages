@@ -1,4 +1,4 @@
-﻿I'm sorry, but an uncaught exception occurred.
+﻿﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
 NameError: name 'mc' is not defined

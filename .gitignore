@@ -1,7 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/*
 log.txt
+error.txt
+traceback.txt
+
+game/cache/*
+game/saves/*
 *.save
-log.txt
-game/saves/persistent
-game/cache/bytecode.rpyb

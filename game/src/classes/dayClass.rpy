@@ -15,7 +15,7 @@ init python:
                 'Afternoon',#1
                 'Evening'   #2
                 ]
-            self.currentDay = 0
+            self.currentDay = 1
             self.currentTime = 0
 
         def getDay(self):
