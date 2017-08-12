@@ -1,21 +1,9 @@
-﻿I'm sorry, but errors were detected in your script. Please correct the
+﻿﻿I'm sorry, but errors were detected in your script. Please correct the
 errors listed below, and try again.
 
 
-File "game/src/locations/parkLocation.rpy", line 9: expected statement.
-    elif day.currentDay == 1:
-            ^
-
-File "game/src/locations/parkLocation.rpy", line 11: expected statement.
-    elif day.currentDay == 2:
-            ^
-
-File "game/src/locations/parkLocation.rpy", line 13: expected statement.
-    elif day.currentDay == 3:
-            ^
-
-File "game/src/locations/parkLocation.rpy", line 15: expected statement.
-    elif day.currentDay == 4:
-            ^
+File "game/script.rpy", line 3: python block expects a non-empty block.
+    init python:
+                ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187

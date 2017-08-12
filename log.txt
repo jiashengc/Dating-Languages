@@ -1,41 +1,40 @@
-Sat Aug 12 13:59:44 2017
+Sat Aug 12 15:41:03 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
  
 
 Bootstrap to the start of init.init took 0.07s
-Early init took 0.02s
-Loader init took 0.08s
-Loading error handling took 0.02s
-Loading script took 0.10s
+Early init took 0.03s
+Loader init took 0.04s
+Loading error handling took 0.03s
+Loading script took 0.09s
 Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.08s
-Loading analysis data took 0.01s
+Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Chong\\AppData\\Roaming/RenPy/backups\\Dating-Languages':
 Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.250000
-Creating interface object took 0.03s
+Creating interface object took 0.04s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
 Prepare screens took 0.04s
-Save pyanalysis. took 0.05s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.01s
+Interface start took 0.00s
 
 primary display bounds: (0, 0, 1920, 1080)
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1733, 975) drawable=(1733, 975)
+Screen sizes: virtual=(1280, 720) physical=(1649, 927) drawable=(1649, 927)
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 4600'
 Version: '4.3.0 - Build 20.19.15.4531'
@@ -254,25 +253,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.11299991608s
+Total time until interface ready: 1.30200004578s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.027000 seconds.
-- Frame drawn at 0.042000 seconds.
-- Frame drawn at 0.061000 seconds.
-- Frame drawn at 0.079000 seconds.
-- 0.079000 seconds to render 5 frames.
-Traceback (most recent call last):
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\bootstrap.py", line 295, in bootstrap
-    renpy.main.main()
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\main.py", line 487, in main
-    run(restart)
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\main.py", line 147, in run
-    renpy.execution.run_context(True)
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\execution.py", line 761, in run_context
-    context.run()
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\execution.py", line 469, in run
-    node = renpy.game.script.lookup(e.args[0])
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\script.py", line 858, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'library_location'.
+- Frame drawn at 0.034000 seconds.
+- Frame drawn at 0.053000 seconds.
+- Frame drawn at 0.065000 seconds.
+- Frame drawn at 0.080000 seconds.
+- 0.080000 seconds to render 5 frames.

@@ -1,27 +1,25 @@
-﻿I'm sorry, but an uncaught exception occurred.
+﻿﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/src/locations/concertLocation.rpy", line 3, in script
-    call screen town
-ScriptError: could not find label 'library_location'.
+NameError: name 'mc' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\bootstrap.py", line 295, in bootstrap
-    renpy.main.main()
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\main.py", line 487, in main
-    run(restart)
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\main.py", line 147, in run
-    renpy.execution.run_context(True)
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\execution.py", line 761, in run_context
-    context.run()
-  File "game/src/locations/concertLocation.rpy", line 3, in script
-    call screen town
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\script.py", line 858, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'library_location'.
+  File "/home/steven/script.rpyc", line 43, in script
+  File "/usr/share/renpy/renpy/ast.py", line 613, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "/usr/share/renpy/renpy/exports.py", line 1147, in say
+    who(what, interact=interact)
+  File "/usr/share/renpy/renpy/character.py", line 847, in __call__
+    who = renpy.python.py_eval(who)
+  File "/usr/share/renpy/renpy/python.py", line 1749, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/usr/share/renpy/renpy/python.py", line 1743, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'mc' is not defined
 
-Windows-8-6.2.9200
+Linux-4.12.4-1-ARCH-x86_64-with-glibc2.2.5
 Ren'Py 6.99.12.4.2187
 Dating Languages 1.0
