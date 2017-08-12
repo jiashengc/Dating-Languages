@@ -4,5 +4,8 @@ screen town:
         hover "small-lake-town-selected.png"
 
         # Locations
-        hotspot (830, 380, 105, 75) clicked Jump ("town_centre")
+        hotspot (195, 206, 110, 75) clicked Jump ("park_location")
+        hotspot (457, 443, 110, 75) clicked Jump ("cafe_location")
+        hotspot (1010, 415, 110, 75) clicked Jump ("library_location")
+        hotspot (895, 448, 110, 75) clicked Jump ("concert_location")
 

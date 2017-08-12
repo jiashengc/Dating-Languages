@@ -1,29 +1,26 @@
-﻿﻿I'm sorry, but an uncaught exception occurred.
+﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 37, in script
-    "It's Gue gue gue gue it's [day.getDay()] and it's [day.getTime()]"
-AttributeError: 'Day' object has no attribute 'getDay()'
+  File "game/src/locations/concertLocation.rpy", line 3, in script
+    call screen town
+ScriptError: could not find label 'library_location'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 37, in script
-    "It's Gue gue gue gue it's [day.getDay()] and it's [day.getTime()]"
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\ast.py", line 613, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\exports.py", line 1147, in say
-    who(what, interact=interact)
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\character.py", line 868, in __call__
-    what = what_pattern.replace("[what]", sub(what, translate=translate))
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\character.py", line 850, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\substitutions.py", line 232, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 652, in get_field
-AttributeError: 'Day' object has no attribute 'getDay()'
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\bootstrap.py", line 295, in bootstrap
+    renpy.main.main()
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\main.py", line 487, in main
+    run(restart)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\main.py", line 147, in run
+    renpy.execution.run_context(True)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\execution.py", line 761, in run_context
+    context.run()
+  File "game/src/locations/concertLocation.rpy", line 3, in script
+    call screen town
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\script.py", line 858, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'library_location'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187

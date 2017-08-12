@@ -12,8 +12,11 @@ label start:
 
     # Initialize variables
     python:
-        cp = Waifu("C++", "#004481", "20 March, 1970", "Blue")
+        py = Waifu("Python", "#35709f", "20 February 1991", "Yellow")
+        ph = Waifu("PHP", "#7486bd", "8 June 1995", "Green")
+        cp = Waifu("C", "#004481", "20 March, 1970", "Blue")
         js = Waifu("JavaScript", "#f7df1e", "7 December, 1990", "White")
+        jv = Waifu("java", "#e52c2a", "23 May 1995", "Red")
         day = Day()
 
     scene bg town

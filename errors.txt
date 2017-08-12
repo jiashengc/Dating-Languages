@@ -2,20 +2,20 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 30: expected statement.
-    cp.addAffection(1)
-                      ^
+File "game/src/locations/parkLocation.rpy", line 9: expected statement.
+    elif day.currentDay == 1:
+            ^
 
-File "game/script.rpy", line 31: expected statement.
-    js.addAffection(-1)
-                       ^
+File "game/src/locations/parkLocation.rpy", line 11: expected statement.
+    elif day.currentDay == 2:
+            ^
 
-File "game/script.rpy", line 35: expected statement.
-    cp.addAffection(-1)
-                       ^
+File "game/src/locations/parkLocation.rpy", line 13: expected statement.
+    elif day.currentDay == 3:
+            ^
 
-File "game/script.rpy", line 36: expected statement.
-    js.addAffection(1)
-                      ^
+File "game/src/locations/parkLocation.rpy", line 15: expected statement.
+    elif day.currentDay == 4:
+            ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187
