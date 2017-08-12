@@ -73,8 +73,7 @@ label choice:
 
 
 label next_day:
-    jump hackathon_location
-
+    show screen qut
 
 label choose_CP:
 
@@ -123,7 +122,7 @@ label location_end:
     $ day.addTime()
 
     if (prevDay == day.getDay()):
-        call screen town
+        call screen qut
     else:
         jump room_location
 
