@@ -2,3 +2,5 @@
 .idea/*
 log.txt
 *.save
+*.save
+game/saves/persistent

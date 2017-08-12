@@ -32,6 +32,10 @@ label choice:
 
     js.c "I'm JavaScript ahjaajahajha! Affection: [js.affection]"
 
+    $ dayName = day.getDay()
+    $ timeName = day.getTime()
+    "It's Gue gue gue gue it's [dayName] and it's [timeName]"
+
     menu:
         "Choose C++":
             $ cp.addAffection(1)
@@ -47,19 +51,17 @@ label choice:
             jump end
 
 label next_day:
-    call screen town
-
     $ day.addTime()
+
+    call screen town
 
     jump choice
 
 label choose_CP:
 
-    $ dayName = day.getDay()
-    $ timeName = day.getTime()
     cp.c "Woohoo you choose me!"
 
-    js.c "Gue gue gue gue it's [dayName] and it's [timeName]"
+    js.c "Gue gue gue gue"
 
     jump next_day
 
