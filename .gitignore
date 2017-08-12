@@ -1,9 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
-.idea/*
 log.txt
 error.txt
 traceback.txt
 **/cache
 **/saves
 *.rpyc
-.idea/workspace.xml
+**/.idea
