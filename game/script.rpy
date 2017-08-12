@@ -28,7 +28,7 @@ label choice:
 
     "It's time to pick your favourite language!"
 
-    cp.c "Pick me you bitch! Affection: [cp.affection]"
+    cp.c "Pick me you bitc! Affection: [cp.affection]"
 
     js.c "I'm JavaScript ahjaajahajha! Affection: [js.affection]"
 
