@@ -1,26 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/src/locations/concertLocation.rpy", line 3, in script
-    call screen town
-ScriptError: could not find label 'library_location'.
+  File "game/script.rpy", line 14, in script
+    python:
+  File "game/script.rpy", line 15, in <module>
+    py = Waifu("Python", "#35709f", "20 February 1991", "Yellow")
+  File "game/src/classes/waifuClass.rpy", line 10, in __init__
+    self.psycho = random.randint(0, 100)
+NameError: global name 'random' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\bootstrap.py", line 295, in bootstrap
-    renpy.main.main()
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\main.py", line 487, in main
-    run(restart)
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\main.py", line 147, in run
-    renpy.execution.run_context(True)
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\execution.py", line 761, in run_context
-    context.run()
-  File "game/src/locations/concertLocation.rpy", line 3, in script
-    call screen town
-  File "D:\Program Files (Development)\Renpy\renpy\renpy\script.py", line 858, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'library_location'.
+  File "game/script.rpy", line 14, in script
+    python:
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Program Files (Development)\Renpy\renpy\renpy\python.py", line 1719, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 15, in <module>
+    py = Waifu("Python", "#35709f", "20 February 1991", "Yellow")
+  File "game/src/classes/waifuClass.rpy", line 10, in __init__
+    self.psycho = random.randint(0, 100)
+NameError: global name 'random' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
