@@ -9,3 +9,16 @@ screen town:
         hotspot (1010, 415, 110, 75) clicked Jump ("library_location")
         hotspot (895, 448, 110, 75) clicked Jump ("concert_location")
 
+    fixed:
+        $ currentDay = day.getDay()
+        text "[currentDay]" xalign 0.95 yalign 0.05
+
+    frame:
+        xpadding 10
+        ypadding 10
+        xalign 0.95
+        yalign 0.05
+
+        vbox:
+            $ currentDay = day.getDay()
+            text "[currentDay]"
