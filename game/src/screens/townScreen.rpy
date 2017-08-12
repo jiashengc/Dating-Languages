@@ -20,5 +20,5 @@ screen town:
         yalign 0.05
 
         vbox:
-            $ currentDay = day.getDay()
-            text "[currentDay]"
+            $ dayTime = day.getDay() + " " + day.getTime()
+            text "[dayTime]"
