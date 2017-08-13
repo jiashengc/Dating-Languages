@@ -1,29 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/gui.rpy", line 194, in script
-    define gui.quick_button_text_idle_color = gui.idle_small_co
-  File "game/gui.rpy", line 194, in <module>
-    define gui.quick_button_text_idle_color = gui.idle_small_co
-AttributeError: 'StoreModule' object has no attribute 'idle_small_co'
+  File "game/script.rpy", line 24, in <module>
+    cp = Character("C++", "#004481")
+TypeError: 'kind' is an invalid keyword argument for this function
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\kdrag\Desktop\renpy-6.99.12.4-sdk\renpy\bootstrap.py", line 295, in bootstrap
-    renpy.main.main()
-  File "C:\Users\kdrag\Desktop\renpy-6.99.12.4-sdk\renpy\main.py", line 419, in main
-    game.context().run(node)
-  File "game/gui.rpy", line 194, in script
-    define gui.quick_button_text_idle_color = gui.idle_small_co
-  File "C:\Users\kdrag\Desktop\renpy-6.99.12.4-sdk\renpy\ast.py", line 1816, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\kdrag\Desktop\renpy-6.99.12.4-sdk\renpy\python.py", line 1743, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/gui.rpy", line 194, in <module>
-    define gui.quick_button_text_idle_color = gui.idle_small_co
-AttributeError: 'StoreModule' object has no attribute 'idle_small_co'
+  File "/home/steven/script.rpyc", line 18, in script
+  File "/usr/share/renpy/renpy/ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/usr/share/renpy/renpy/python.py", line 1719, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 24, in <module>
+    cp = Character("C++", "#004481")
+  File "/usr/share/renpy/renpy/character.py", line 1151, in Character
+    return type(kind)(name, kind=kind, **properties)
+TypeError: 'kind' is an invalid keyword argument for this function
 
-Windows-8-6.2.9200
+Linux-4.12.4-1-ARCH-x86_64-with-glibc2.2.5
 Ren'Py 6.99.12.4.2187
- 
+() 1.0

@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 46: expected 'image_name_component' not found.
-    show "cp_image"
-         ^
+File "game/screens.rpy", line 339: style property background appears twice.
+    background "#006"
+              ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187
