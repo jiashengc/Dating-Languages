@@ -1,14 +1,10 @@
-screen town:
+screen hackathon_girls:
     imagemap:
         ground "small-lake-town.png"
         hover "small-lake-town-selected.png"
 
         # Locations
-        hotspot (195, 206, 110, 75) clicked Jump ("park_location")
-        hotspot (457, 443, 110, 75) clicked Jump ("cafe_location")
-        hotspot (1010, 415, 110, 75) clicked Jump ("library_location")
-        hotspot (830, 380, 110, 75) clicked Jump ("centre_location")
-        hotspot (857, 25, 110, 75) clicked Jump ("beach_location")
+        hotspot (195, 206, 110, 75) clicked Return(cp)
 
     fixed:
         $ currentDay = day.getDay()

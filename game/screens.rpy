@@ -27,6 +27,7 @@ style gui_text:
 
 
 style button:
+    #background '#ffffff'
     properties gui.button_properties("button")
 
 style button_text is gui_text:
@@ -325,7 +326,7 @@ screen navigation():
             textbutton _("Help") action ShowMenu("help")
 
             ## The quit button is banned on iOS and unnecessary on Android.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action Quit(confirm=False)
 
 
 style navigation_button is gui_button
@@ -333,6 +334,7 @@ style navigation_button_text is gui_button_text
 
 style navigation_button:
     size_group "navigation"
+    background "#ff00ff" 
     properties gui.button_properties("navigation_button")
     background "#006"
     insensitive_background "#444"
