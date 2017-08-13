@@ -95,7 +95,7 @@ label hackathon_girls:
         hide javascript
 
     elif _name == "Python":
-        show py
+        show image "Python.png"
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
         py "Hey! I’m Python3. You can just call me Python."
@@ -107,7 +107,7 @@ label hackathon_girls:
         py "Actually, I want to make a dating sim..."
         py "...where the characters are programmers."
         player "Sounds like fun! Good luck!"
-        hide py
+        hide image "Python.png"
     # elif _name == "PHP":
     #     pass
     elif _name == "Java":
