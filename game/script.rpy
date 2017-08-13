@@ -27,7 +27,7 @@ label start:
         #jv = Waifu("java", "#e52c2a", "23 May 1995", "Red")
         cp = Character("C++", color="#004481")
         java = Character("Java", color="#e52c2a")
-        js = Character("Javascript", color="##f7df1e")
+        js = Character("JavaScript", color="#f7df1e")
         py = Character("Python", color="#35709f")
         c = Character("C", color="#004481")
         day = Day()
@@ -52,8 +52,6 @@ label nameMC(girl, girl_img):
     return
 
 label hackathon_girls:
-    c "Your count: [girlsMet]"
-
     call screen hackathon_girls
 
     $ _name = _return.name
