@@ -27,4 +27,4 @@ label kidney_location_day:
     js "npm http fetch GET 200 http://registry.npmjs.org/express 457ms"
     hide javascript
 
-    jump library_location_day
+    jump library_location
