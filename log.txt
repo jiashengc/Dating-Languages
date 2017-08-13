@@ -9,6 +9,7 @@ Loader init took 0.01s
 Loading error handling took 0.18s
 Loading script took 3.83s
 Loading persistent took 0.01s
+Loading script took 0.24s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.32s
 Loading analysis data took 0.02s
