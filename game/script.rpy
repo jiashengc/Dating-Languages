@@ -16,7 +16,7 @@ image bg hackathon = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
-image python normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image pyt normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 
 
 # The game starts here.
@@ -83,15 +83,22 @@ label hackathon_girls:
     elif _name == "JavaScript":
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
+        voice "voices/js1.ogg"    
         js "Hey I’m JavaScript! Nice to meet you!"
         player "Are you related to Java by any chance?"
+        voice "voices/js2.ogg"
         js "Are pineapples related to apples?"
         player "Oh, okay. So what do you plan to build in this hackathon?"
+        voice "voices/js3.ogg"
         js "Yea, so let me pitch to you."
+        voice "voices/js4.ogg"
         js "Did you know that broccoli prices affects us at a global scale?"
+        voice ""
         js "Every year people buy broccoli at high prices wasting nearly 1 million dollars a year."
+        voice ""
         js "So how about we build a platform using Angular, Vue, Mongo, Node, Socket.io, React, Express, Ember, Meteor, jQuery, d3, lodash, Underscore, Backbone, Knockout to track the prices of broccoli."
         player "Sounds like you’ve got everything planned."
+        voice ""
         js "Yea! I’ll also be making my own framework during the hack, I promise it’ll be great!"
         player "Yea, sure. I’ll be looking forward to it then."
 
