@@ -15,7 +15,7 @@ image bg hackathon = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
-image python normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image py normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 
 
 # The game starts here.
@@ -127,26 +127,11 @@ label hackathon_girls:
 
     $ girlsMet += 1
 
-    if girlsMet != 5:
+    if girlsMet != 1:
         jump hackathon_girls
     else:
         "Now you've met everyone."
-        jump saturday
-
-label saturday:
-    $ day.addDay()
-
-    player "Hey, JavaScript! I really liked your idea. Do you want to work together on it?"
-    js "Yea! If you can come up with a name for our framework that’ll be great!"
-    player "How about Broccoli.js?"
-    js "Nah, Broccoli.js already exists."
-    player "Salad.js? Tree.js?"
-    js "I think GreenCauliflower.js will work."
-    player "Great let’s publish it!"
-    js "Okay. But wait, i need to install my dependencies"
-    player "Sure thing. How long will it take?"
-    js "not too long!"
-
+        jump next_time
 
 
 
