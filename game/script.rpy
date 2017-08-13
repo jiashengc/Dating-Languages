@@ -14,11 +14,8 @@ image bg hackathon_start_background = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
-<<<<<<< HEAD
 image pyt normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
-=======
 image py normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
->>>>>>> 4ce5120518a15b98a72527d79a699325825efa94
 
 
 # The game starts here.
@@ -95,12 +92,12 @@ label hackathon_girls:
         js "Yea, so let me pitch to you."
         voice "voices/js4.ogg"
         js "Did you know that broccoli prices affects us at a global scale?"
-        voice ""
+        voice "voices/js6.ogg"
         js "Every year people buy broccoli at high prices wasting nearly 1 million dollars a year."
-        voice ""
+        voice "voices/js5.ogg"
         js "So how about we build a platform using Angular, Vue, Mongo, Node, Socket.io, React, Express, Ember, Meteor, jQuery, d3, lodash, Underscore, Backbone, Knockout to track the prices of broccoli."
         player "Sounds like you’ve got everything planned."
-        voice ""
+        voice "voices/js7.ogg"
         js "Yea! I’ll also be making my own framework during the hack, I promise it’ll be great!"
         player "Yea, sure. I’ll be looking forward to it then."
         hide javascript
