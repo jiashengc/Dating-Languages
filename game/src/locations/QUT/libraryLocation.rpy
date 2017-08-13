@@ -12,6 +12,7 @@ label library_location:
 label library_location_day:
 
     "1 day later..."
+    show javascript normal
     player "Hey JavaScript, are you finished yet? It's an hours before pitch time!"
     js "Just finished! Take a look. What do you think?"
 
