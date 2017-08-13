@@ -1,4 +1,5 @@
 # The script of the game goes in this file.
+image bg hackathon_start_background = "qut-hackathon.png"
 
 init python:
     mcName = ""
@@ -44,6 +45,8 @@ label start:
 label nameMC(girl, girl_img):
     show image girl_img
 
+    scene bg hackathon_start_background
+
     girl "Hi! I haven't met you before, what's your name?"
     $ mcName = renpy.input("What is your name?", length=16)
 
@@ -59,7 +62,9 @@ label hackathon_girls:
     call screen hackathon_girls
 
     $ _name = _return.name
-        
+
+    scene bg hackathon_start_background
+
     if girlsMet == 0:
         call nameMC(_return, "[_name].png")
 
@@ -227,14 +232,14 @@ label next_day:
 #     cp "No, Baka! >:("
 #     jump next_day
 
-# label location_end:
-#     $ prevDay = day.getDay()
-#     $ day.addTime()
+label location_end:
+    $ prevDay = day.getDay()
+    $ day.addTime()
 
-#     if (prevDay == day.getDay()):
-#         call screen town
-#     else:
-#         jump room_location
+    if (prevDay == day.getDay()):
+        call screen qut
+    else:
+        jump room_location
 
 label end:
     # This ends the game.
