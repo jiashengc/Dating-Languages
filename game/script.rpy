@@ -13,6 +13,10 @@ define player = DynamicCharacter("mcName")
 image bg town = "anime-town.jpg"
 image bg hackathon = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image python normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+
 
 # The game starts here.
 
@@ -27,7 +31,7 @@ label start:
         #jv = Waifu("java", "#e52c2a", "23 May 1995", "Red")
         cp = Character("C++", color="#004481")
         java = Character("Java", color="#e52c2a")
-        js = Character("Javascript", color="##f7df1e")
+        js = Character("JavaScript", color="#f7df1e")
         py = Character("Python", color="#35709f")
         c = Character("C", color="#004481")
         day = Day()
@@ -52,8 +56,6 @@ label nameMC(girl, girl_img):
     return
 
 label hackathon_girls:
-    c "Your count: [girlsMet]"
-
     call screen hackathon_girls
 
     $ _name = _return.name
