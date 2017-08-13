@@ -14,7 +14,11 @@ image bg hackathon_start_background = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+<<<<<<< HEAD
+image pyt normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+=======
 image py normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+>>>>>>> 4ce5120518a15b98a72527d79a699325825efa94
 
 
 # The game starts here.
@@ -81,21 +85,28 @@ label hackathon_girls:
         show javascript
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
+        voice "voices/js1.ogg"    
         js "Hey I’m JavaScript! Nice to meet you!"
         player "Are you related to Java by any chance?"
+        voice "voices/js2.ogg"
         js "Are pineapples related to apples?"
         player "Oh, okay. So what do you plan to build in this hackathon?"
+        voice "voices/js3.ogg"
         js "Yea, so let me pitch to you."
+        voice "voices/js4.ogg"
         js "Did you know that broccoli prices affects us at a global scale?"
+        voice ""
         js "Every year people buy broccoli at high prices wasting nearly 1 million dollars a year."
+        voice ""
         js "So how about we build a platform using Angular, Vue, Mongo, Node, Socket.io, React, Express, Ember, Meteor, jQuery, d3, lodash, Underscore, Backbone, Knockout to track the prices of broccoli."
         player "Sounds like you’ve got everything planned."
+        voice ""
         js "Yea! I’ll also be making my own framework during the hack, I promise it’ll be great!"
         player "Yea, sure. I’ll be looking forward to it then."
         hide javascript
 
     elif _name == "Python":
-        show py
+        show image "Python.png"
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
         py "Hey! I’m Python3. You can just call me Python."
@@ -107,7 +118,7 @@ label hackathon_girls:
         py "Actually, I want to make a dating sim..."
         py "...where the characters are programmers."
         player "Sounds like fun! Good luck!"
-        hide py
+        hide image "Python.png"
     # elif _name == "PHP":
     #     pass
     elif _name == "Java":
