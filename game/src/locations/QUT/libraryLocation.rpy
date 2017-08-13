@@ -18,6 +18,7 @@ label library_location_day:
 
 label library_location_day_next:
 
+	voice "voices/js8"
     js "Pretty cool huh?"
     player "..."
 
