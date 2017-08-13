@@ -245,7 +245,7 @@ label location_end:
     if (prevDay == day.getDay()):
         call screen qut
     else:
-        jump room_location
+        call screen qut
 
 label end:
     # This ends the game.

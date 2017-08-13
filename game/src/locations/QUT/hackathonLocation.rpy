@@ -27,4 +27,22 @@ label hackathon_location_day:
     js "npm info lifecycle nanjiakoria@1.2.33~install nanjiakoria@.1.2.33"
     player "okay I'll just leave..."
 
-    call screen qut
+    jump hackathon_location_end:
+
+label hackathon_location_end:
+
+    show javascript
+
+    "IT'S TIME FOR THE PITCHING TIME!"
+    "LET'S HAVE JAVASCRIPT TO PITCH HER IDEA!"
+
+    js "Thank you thank you! Here's my Hello World using lots of JavaScript frameworks!"
+
+    show screen hello_world_two
+
+    "Clap-"
+    js "Thank you thank you! I know I'm the best!"
+
+    js "Thanks [mcName], you really are the greatest, would you like to come over my place? :)"
+
+    jump room_location
