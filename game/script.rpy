@@ -107,14 +107,8 @@ label hackathon_girls:
     elif _name == "Java":
         show java    
         if girlsMet != 0:
-<<<<<<< HEAD
             java "Good evening. I'm Java. You must be [mcName]."
         player "Hi! I really like your glasses."
-=======
-            player "Hi, I'm [mcName]. What's your name?"
-        java "Good evening. I'm Java."
-        player "I really like your glasses."
->>>>>>> bcbb5000f51c9224abca87b8f787924e247327b2
         java "Why thank you. I need them because I can't see sharp."
         player "What are you working on this weekend?"
         java "I'm going to be implementing a port of Minecraft onto Android."
