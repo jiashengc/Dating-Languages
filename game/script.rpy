@@ -1,4 +1,5 @@
 # The script of the game goes in this file.
+image bg hackathon_start_background = "qut-hackathon.png"
 
 init python:
     mcName = ""
@@ -44,6 +45,8 @@ label start:
 label nameMC(girl, girl_img):
     show image girl_img
 
+    scene bg hackathon_start_background
+
     girl "Hi! I haven't met you before, what's your name?"
     $ mcName = renpy.input("What is your name?", length=16)
 
@@ -59,7 +62,9 @@ label hackathon_girls:
     call screen hackathon_girls
 
     $ _name = _return.name
-        
+
+    scene bg hackathon_start_background
+
     if girlsMet == 0:
         call nameMC(_return, "[_name].png")
 
@@ -109,15 +114,22 @@ label hackathon_girls:
     elif _name == "Java":
         show java    
         if girlsMet != 0:
-            java "Good evening. I'm Java. You must be [mcName]."
-        player "Hi! I really like your glasses."
+            player "Hi, I'm [mcName]. What's your name?"
+        voice "voices/java1.ogg"    
+        java "Good evening. I'm Java."
+        player "I really like your glasses."
+        voice "voices/java2.ogg"
         java "Why thank you. I need them because I can't see sharp."
         player "What are you working on this weekend?"
+        voice "voices/java3.ogg"
         java "I'm going to be implementing a port of Minecraft onto Android."
         player "Oh, that sounds-"
+        voice "voices/java4.ogg"
         java "And after that I'll be creating a modification that allows enterprises to flourish."
+        voice "voices/java5.ogg"
         java "by implementing a payroll and human resource managment solution to synergise our business operations."
         player "Uh, that... sounds good. Could I get your number and chat to you about it."
+        voice "voices/java6.ogg"
         java "org.character.java:21: phoneNumber has private access in JavaCharacter"
         player "I'll talk to you later."
         hide java 
@@ -220,14 +232,14 @@ label next_day:
 #     cp "No, Baka! >:("
 #     jump next_day
 
-# label location_end:
-#     $ prevDay = day.getDay()
-#     $ day.addTime()
+label location_end:
+    $ prevDay = day.getDay()
+    $ day.addTime()
 
-#     if (prevDay == day.getDay()):
-#         call screen town
-#     else:
-#         jump room_location
+    if (prevDay == day.getDay()):
+        call screen qut
+    else:
+        jump room_location
 
 label end:
     # This ends the game.
