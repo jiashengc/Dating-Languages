@@ -21,6 +21,10 @@ label kidney_location_day:
     js "Okay. But wait, i need to install my dependencies"
     player "Sure thing. How long will it take?"
     js "not too long!"
+    js "npm info using npm@1.4.0"
+    js "npm info using node@v3.1.2"
+    js "npm verb npm-session fd2646ea470e5443"
+    js "npm http fetch GET 200 http://registry.npmjs.org/express 457ms"
     hide javascript
 
-    jump location_end
+    jump library_location_day
