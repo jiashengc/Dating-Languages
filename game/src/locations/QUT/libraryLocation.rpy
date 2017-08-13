@@ -11,7 +11,7 @@ label library_location:
 
 label library_location_day:
 
-    show javascript normal
+    show javascript
 
     player "Hey JavaScript, are you finished yet? It's an hours before pitch time!"
     js "Just finished! Take a look. What do you think?"
