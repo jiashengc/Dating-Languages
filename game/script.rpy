@@ -14,7 +14,7 @@ image bg hackathon_start_background = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
-image pyt normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image py normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 
 
 # The game starts here.
@@ -41,9 +41,8 @@ label start:
     jump hackathon_girls
 
 label nameMC(girl, girl_img):
-    show image girl_img
-
     scene bg hackathon_start_background
+    show image girl_img
 
     girl "Hi! I haven't met you before, what's your name?"
     $ mcName = renpy.input("What is your name?", length=16)
@@ -67,17 +66,20 @@ label hackathon_girls:
         call nameMC(_return, "[_name].png")
 
     if _name == "C":
+        show c
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
-        c "Hello, peasant. My name is C%s.U#(v|f`Lu.0U\6T."
+        c "Hello, peasant. My name is C\%s.U#(v|f`Lu.0U\6T."
         c "Excuse me. I meant my name is C."
         player "Okay. What do you want to work on for the hackathon?"
         c "I think I’ll be making a new operating system."
         player "Ambitious."
         "???" "I accidentally dropped my iPhone. Could you pick that up, C?"
         c "Sorry. I don’t do garbage collection."
+        hide c
 
     elif _name == "JavaScript":
+        show javascript
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
         js "Hey I’m JavaScript! Nice to meet you!"
@@ -91,8 +93,10 @@ label hackathon_girls:
         player "Sounds like you’ve got everything planned."
         js "Yea! I’ll also be making my own framework during the hack, I promise it’ll be great!"
         player "Yea, sure. I’ll be looking forward to it then."
+        hide javascript
 
     elif _name == "Python":
+        show py
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
         py "Hey! I’m Python3. You can just call me Python."
@@ -103,9 +107,7 @@ label hackathon_girls:
         player "Seems interesting. Are you planning on doing that for the hackathon?"
         py "Actually, I want to make a dating sim… where the characters are programmers."
         player "Sounds like fun! Good luck!"
-
-
-        pass
+        hide py
     # elif _name == "PHP":
     #     pass
     elif _name == "Java":
