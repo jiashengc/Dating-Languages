@@ -68,11 +68,15 @@ label hackathon_girls:
         show c
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
+        voice "voices/c001.ogg"
         c "Hello, peasant. My name is C\%s.U#(v|f`Lu.0U\6T."
+        voice "voices/c002.ogg"
         c "Excuse me. I meant my name is C."
         player "Okay. What do you want to work on for the hackathon?"
+        voice "voices/c003.ogg"
         c "I think I’ll be making a new operating system."
         "???" "I accidentally dropped my iPhone. Could you pick that up, C?"
+        voice "voices/c004.ogg"
         c "Sorry. I don’t do garbage collection."
         hide c
 
@@ -250,7 +254,7 @@ label location_end:
     if (prevDay == day.getDay()):
         call screen qut
     else:
-        jump room_location
+        call screen qut
 
 label end:
     # This ends the game.
