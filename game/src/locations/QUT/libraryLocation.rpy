@@ -20,8 +20,8 @@ label library_location_day:
 
 label library_location_day_next:
 
-	voice "voices/js8"
+    voice "voices/js8.ogg"
     js "Pretty cool huh?"
     player "..."
-
+    
     jump location_end
