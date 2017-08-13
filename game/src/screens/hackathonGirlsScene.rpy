@@ -4,7 +4,7 @@ screen hackathon_girls:
         hover "qut-hackathon-girls.png"
 
         # Locations
-        hotspot (0, 230, 360, 500) clicked Return(cp)
+        hotspot (0, 230, 360, 500) clicked Return(c)
         hotspot (360, 230, 300, 500) clicked Return(java)
 
     fixed:
