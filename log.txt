@@ -1,4 +1,4 @@
-Sat Aug 12 10:53:17 2017
+Sun Aug 13 10:50:37 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
  
@@ -7,34 +7,34 @@ Bootstrap to the start of init.init took 0.07s
 Early init took 0.02s
 Loader init took 0.03s
 Loading error handling took 0.04s
-Loading script took 0.79s
-Loading persistent took 0.02s
+Loading script took 0.09s
+Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.36s
+Running init code took 0.12s
 Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.17s
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.500000
-Creating interface object took 0.06s
+Creating interface object took 0.03s
 Cleaning stores took 0.00s
-Init translation took 0.09s
+Init translation took 0.05s
 Build styles took 0.01s
-Load screen analysis took 0.02s
+Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.10s
+Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.09s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.01s
 
 primary display bounds: (0, 0, 2160, 1440)
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(2058, 1158) drawable=(2058, 1158)
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 520'
 Version: '4.4.0 - Build 20.19.15.4454'
@@ -258,11 +258,5 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 2.90499997139s
-- Target is 5 frames in 0.333333333333 seconds.
-- Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.051000 seconds.
-- Frame drawn at 0.073000 seconds.
-- Frame drawn at 0.094000 seconds.
-- Frame drawn at 0.115000 seconds.
-- 0.115000 seconds to render 5 frames.
+Total time until interface ready: 3.17800021172s
+- T

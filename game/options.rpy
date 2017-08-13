@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Dating Languages")
+define config.name = _("()")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -29,7 +29,7 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. To insert a blank line
 ## between paragraphs, write \n\n.
 
-define gui.about = _("")
+define gui.about = _("Created by Miheal Keehl")
 
 
 ## A short name for the game used for executables and directories in the built

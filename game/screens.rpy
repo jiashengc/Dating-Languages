@@ -12,6 +12,7 @@ init offset = -1
 style default:
     properties gui.text_properties()
     language gui.language
+    
 
 style input:
     properties gui.text_properties("input", accent=True)
@@ -333,9 +334,13 @@ style navigation_button_text is gui_button_text
 style navigation_button:
     size_group "navigation"
     properties gui.button_properties("navigation_button")
+    background "#006"
+    insensitive_background "#444"
+    hover_background "#FFC0CB"
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    outlines [ (absolute(3), "#8A0707", absolute(1.5), absolute(1)) ]
 
 
 ## Main Menu screen ############################################################
@@ -381,7 +386,7 @@ style main_menu_frame:
     xsize 280
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background "gui/overlay/main_menu 1.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -490,7 +495,7 @@ style game_menu_outer_frame:
     bottom_padding 30
     top_padding 120
 
-    background "gui/overlay/game_menu.png"
+    background "gui/overlay/game_menu 1.png"
 
 style game_menu_navigation_frame:
     xsize 280

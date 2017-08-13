@@ -23,21 +23,21 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#0099cc'
+define gui.accent_color = '#000'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#555555'
+define gui.idle_color = '#ffffff'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#FF9DAB'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#FF69B4'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#5555557f'
@@ -70,7 +70,7 @@ define gui.text_size = 22
 define gui.name_text_size = 30
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 24
+define gui.interface_text_size = 28
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 28
@@ -85,7 +85,7 @@ define gui.title_text_size = 50
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background = "gui/town background image.jpg"
 define gui.game_menu_background = "gui/game_menu.png"
 
 ## Should we show the name and version of the game?
@@ -258,7 +258,7 @@ define gui.notify_ypos = 45
 define gui.choice_spacing = 22
 
 ## Buttons in the navigation section of the main and game menus.
-define gui.navigation_spacing = 4
+define gui.navigation_spacing = 30
 
 ## Controls the amount of spacing between preferences.
 define gui.pref_spacing = 10
