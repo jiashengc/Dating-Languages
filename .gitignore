@@ -7,3 +7,4 @@ game/saves
 *.rpyc
 **/.idea
 .idea/workspace.xml
+log.txt

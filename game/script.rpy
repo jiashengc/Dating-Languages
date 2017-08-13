@@ -1,6 +1,4 @@
 # The script of the game goes in this file.
-image bg hackathon_start_background = "qut-hackathon.png"
-
 init python:
     mcName = ""
     girlsMet = 0
@@ -12,7 +10,7 @@ define player = DynamicCharacter("mcName")
 
 # Delcare images for the game
 image bg town = "anime-town.jpg"
-image bg hackathon = "qut-hackathon.png"
+image bg hackathon_start_background = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
@@ -76,9 +74,8 @@ label hackathon_girls:
         player "Okay. What do you want to work on for the hackathon?"
         c "I think I’ll be making a new operating system."
         player "Ambitious."
-        "I accidentally dropped my iPhone."
-        player "Oh, sorry. Could you pick that up for me?"
-        c "I don’t do garbage collection."
+        "???" "I accidentally dropped my iPhone. Could you pick that up, C?"
+        c "Sorry. I don’t do garbage collection."
 
     elif _name == "JavaScript":
         if girlsMet != 0:
@@ -139,10 +136,10 @@ label hackathon_girls:
 
     $ girlsMet += 1
 
-    if girlsMet != 5:
+    if girlsMet != 4:
         jump hackathon_girls
     else:
-        "Now you've met everyone."
+        #"Now you've met everyone."
         jump next_time
 
 
