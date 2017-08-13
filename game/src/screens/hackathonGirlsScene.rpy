@@ -4,8 +4,8 @@ screen hackathon_girls:
         hover "qut-hackathon-girls.png"
 
         # Locations
-        hotspot (0, 328, 250, 500) clicked Return(cp)
-        hotspot (250, 330, 250, 500) clicked Return(java)
+        hotspot (0, 230, 360, 500) clicked Return(cp)
+        hotspot (360, 230, 300, 500) clicked Return(java)
 
     fixed:
         $ currentDay = day.getDay()

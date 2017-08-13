@@ -12,7 +12,7 @@ define player = DynamicCharacter("mcName")
 # Delcare images for the game
 image bg town = "anime-town.jpg"
 image bg hackathon = "qut-hackathon.png"
-image java normal = "java normal.png"
+image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 
 # The game starts here.
 
@@ -75,9 +75,9 @@ label hackathon_girls:
     elif _name == "PHP":
         pass
     elif _name == "Java":
-        show java happy
         if girlsMet != 0:
             java "Good evening. I'm Java. You must be [mcName]."
+        show java
         player "Hi! I really like your glasses."
         java "Why thank you. I need them because I can't see sharp."
         player "What are you working on this weekend?"
@@ -88,7 +88,7 @@ label hackathon_girls:
         player "Uh, that... sounds good. Could I get your number and chat to you about it."
         java "org.character.java:21: phoneNumber has private access in JavaCharacter"
         player "I'll talk to you later."
-        hide java happy
+        hide java 
     else:
         "Something has went wrong, you shouldn't see this"
         jump hackathon_girls
