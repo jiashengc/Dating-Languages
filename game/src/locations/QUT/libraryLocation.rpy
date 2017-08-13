@@ -11,8 +11,8 @@ label library_location:
 
 label library_location_day:
 
-    show javascript
-
+    "1 day later..."
+    show javascript normal
     player "Hey JavaScript, are you finished yet? It's an hours before pitch time!"
     js "Just finished! Take a look. What do you think?"
 
@@ -20,7 +20,8 @@ label library_location_day:
 
 label library_location_day_next:
 
+    voice "voices/js8.ogg"
     js "Pretty cool huh?"
     player "..."
-
+    
     jump location_end

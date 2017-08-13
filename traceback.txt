@@ -1,69 +1,39 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'gui/title-screen.png'>:
-IOError: Couldn't find file 'gui/title-screen.png'.
+While running game code:
+IOError: Couldn't find file 'voices/js8.js'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/home/steven/_layout/screen_main_menu.rpymc", line 28, in script
-  File "/usr/share/renpy/renpy/ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/usr/share/renpy/renpy/python.py", line 1719, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/_layout/screen_main_menu.rpym", line 30, in <module>
-    ui.interact()
+  File "/home/steven/src/locations/QUT/libraryLocation.rpyc", line 24, in script
+  File "/usr/share/renpy/renpy/ast.py", line 613, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "/usr/share/renpy/renpy/exports.py", line 1147, in say
+    who(what, interact=interact)
+  File "/usr/share/renpy/renpy/character.py", line 877, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/usr/share/renpy/renpy/character.py", line 716, in do_display
+    **display_args)
+  File "/usr/share/renpy/renpy/character.py", line 508, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
   File "/usr/share/renpy/renpy/ui.py", line 285, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/usr/share/renpy/renpy/display/core.py", line 2526, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/usr/share/renpy/renpy/display/core.py", line 2883, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/usr/share/renpy/renpy/display/core.py", line 1955, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 427, in renpy.display.render.render_screen (gen/renpy.display.render.c:6806)
-    rv = render(root, width, height, 0, 0)
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
-    rv = d.render(widtho, heighto, st, at)
-  File "/usr/share/renpy/renpy/display/layout.py", line 693, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
-    rv = d.render(widtho, heighto, st, at)
-  File "/usr/share/renpy/renpy/display/layout.py", line 693, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
-    rv = d.render(widtho, heighto, st, at)
-  File "/usr/share/renpy/renpy/display/layout.py", line 693, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
-    rv = d.render(widtho, heighto, st, at)
-  File "/usr/share/renpy/renpy/display/screen.py", line 623, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
-    rv = d.render(widtho, heighto, st, at)
-  File "/usr/share/renpy/renpy/display/layout.py", line 693, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
-    rv = d.render(widtho, heighto, st, at)
-  File "/usr/share/renpy/renpy/display/im.py", line 473, in render
-    im = cache.get(self)
-  File "/usr/share/renpy/renpy/display/im.py", line 200, in get
-    surf = image.load()
-  File "/usr/share/renpy/renpy/display/im.py", line 524, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/usr/share/renpy/renpy/display/core.py", line 2825, in interact_core
+    renpy.audio.audio.interact()
+  File "/usr/share/renpy/renpy/audio/audio.py", line 930, in interact
+    periodic()
+  File "/usr/share/renpy/renpy/audio/audio.py", line 864, in periodic
+    c.periodic()
+  File "/usr/share/renpy/renpy/audio/audio.py", line 403, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "/usr/share/renpy/renpy/audio/audio.py", line 67, in load
+    rv = renpy.loader.load(fn)
   File "/usr/share/renpy/renpy/loader.py", line 543, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'gui/title-screen.png'.
+IOError: Couldn't find file 'voices/js8.js'.
 
 Linux-4.12.4-1-ARCH-x86_64-with-glibc2.2.5
 Ren'Py 6.99.12.4.2187
