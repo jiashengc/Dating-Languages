@@ -38,7 +38,7 @@ label hackathon_location_end:
 
     js "Thank you thank you! Here's my Hello World using lots of JavaScript frameworks!"
 
-    show screen hello_world_two
+    call screen hello_world_two
 
 label hackathon_location_end_two:
 
