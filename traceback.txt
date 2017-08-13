@@ -1,23 +1,69 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 24, in <module>
-    cp = Character("C++", "#004481")
-TypeError: 'kind' is an invalid keyword argument for this function
+While loading <'Image' u'gui/title-screen.png'>:
+IOError: Couldn't find file 'gui/title-screen.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/home/steven/script.rpyc", line 18, in script
+  File "/home/steven/_layout/screen_main_menu.rpymc", line 28, in script
   File "/usr/share/renpy/renpy/ast.py", line 814, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "/usr/share/renpy/renpy/python.py", line 1719, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/script.rpy", line 24, in <module>
-    cp = Character("C++", "#004481")
-  File "/usr/share/renpy/renpy/character.py", line 1151, in Character
-    return type(kind)(name, kind=kind, **properties)
-TypeError: 'kind' is an invalid keyword argument for this function
+  File "renpy/common/_layout/screen_main_menu.rpym", line 30, in <module>
+    ui.interact()
+  File "/usr/share/renpy/renpy/ui.py", line 285, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/usr/share/renpy/renpy/display/core.py", line 2526, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/usr/share/renpy/renpy/display/core.py", line 2883, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/usr/share/renpy/renpy/display/core.py", line 1955, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 427, in renpy.display.render.render_screen (gen/renpy.display.render.c:6806)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "/usr/share/renpy/renpy/display/layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "/usr/share/renpy/renpy/display/layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "/usr/share/renpy/renpy/display/layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "/usr/share/renpy/renpy/display/screen.py", line 623, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "/usr/share/renpy/renpy/display/layout.py", line 693, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3440)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2978)
+    rv = d.render(widtho, heighto, st, at)
+  File "/usr/share/renpy/renpy/display/im.py", line 473, in render
+    im = cache.get(self)
+  File "/usr/share/renpy/renpy/display/im.py", line 200, in get
+    surf = image.load()
+  File "/usr/share/renpy/renpy/display/im.py", line 524, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/usr/share/renpy/renpy/loader.py", line 543, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'gui/title-screen.png'.
 
 Linux-4.12.4-1-ARCH-x86_64-with-glibc2.2.5
 Ren'Py 6.99.12.4.2187

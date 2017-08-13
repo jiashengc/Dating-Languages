@@ -10,6 +10,21 @@ label hackathon_location:
 
 label hackathon_location_day:
 
-    "Hey welcome"
+    show javascript
+    player "Hey JavaScript! It’s a few hours before the pitch, how’s your progress?"
+    js "Going good! I was just done installing all the dependencies for the project!"
+    player "That doesn’t sound too good?"
+    js "Nah, with all these frameworks installed, I’ll get work done real quick!"
+    player "Um, sure, do you need -"
+    js "Oh look! Another new framework just came out! I’ve got to have that!"
+    player "I don’t think that’s a good idea…"
+    js "npm install nomongodb"
+    js "npm info lifecycle send@0.32.2~install: send@0.32.2"
+    js "npm info lifecycle depd@1.1.1~install: depd@1.1.1"
+    js "npm info lifecycle harro@4.2.0~install: harro@4.2.0"
+    js "npm info lifecycle nanisore@1.7.8~install nanisore@1.7.8"
+    js "npm info lifecycle habina@1.0.0~-install habina@1.0.0"
+    js "npm info lifecycle nanjiakoria@1.2.33~install nanjiakoria@.1.2.33"
+    player "okay I'll just leave..."
 
     call screen qut
