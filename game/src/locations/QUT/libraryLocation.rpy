@@ -16,7 +16,7 @@ label library_location_day:
     player "Hey JavaScript, are you finished yet? It's an hours before pitch time!"
     js "Just finished! Take a look. What do you think?"
 
-    call screen hello_world
+    jump library_location_day_next
 
 label library_location_day_next:
 

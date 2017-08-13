@@ -12,6 +12,7 @@ label room_location:
     js "I've got something special for you"
     js "I'll show you my secret source code"
 
+    hide javascript
     show js sexy
 
     js ";)"
