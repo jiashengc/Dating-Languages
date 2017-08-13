@@ -15,10 +15,6 @@ image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, ya
 image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image py normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
-<<<<<<< HEAD
-
-=======
->>>>>>> 83c4e32e4260c5919e9d70164484d224e466a572
 
 # The game starts here.
 
@@ -72,11 +68,15 @@ label hackathon_girls:
         show c
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
+        voice "voices/c001.ogg"
         c "Hello, peasant. My name is C\%s.U#(v|f`Lu.0U\6T."
+        voice "voices/c002.ogg"
         c "Excuse me. I meant my name is C."
         player "Okay. What do you want to work on for the hackathon?"
+        voice "voices/c003.ogg"
         c "I think I’ll be making a new operating system."
         "???" "I accidentally dropped my iPhone. Could you pick that up, C?"
+        voice "voices/c004.ogg"
         c "Sorry. I don’t do garbage collection."
         hide c
 
