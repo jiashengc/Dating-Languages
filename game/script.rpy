@@ -14,6 +14,10 @@ define player = DynamicCharacter("mcName")
 image bg town = "anime-town.jpg"
 image bg hackathon = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+image python normal = Image("Python.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
+
 
 # The game starts here.
 
@@ -110,9 +114,8 @@ label hackathon_girls:
     elif _name == "Java":
         show java    
         if girlsMet != 0:
-            player "Hi, I'm [mcName]. What's your name?"
-        java "Good evening. I'm Java."
-        player "I really like your glasses."
+            java "Good evening. I'm Java. You must be [mcName]."
+        player "Hi! I really like your glasses."
         java "Why thank you. I need them because I can't see sharp."
         player "What are you working on this weekend?"
         java "I'm going to be implementing a port of Minecraft onto Android."
