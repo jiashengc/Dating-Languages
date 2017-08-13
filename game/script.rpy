@@ -69,8 +69,7 @@ label hackathon_girls:
         player "Okay. What do you want to work on for the hackathon?"
         c "I think I’ll be making a new operating system."
         player "Ambitious."
-        "I accidentally dropped my iPhone."
-        player "Oh, sorry. Could you pick that up for me?"
+        player "Oh, sorry. I dropped my iPhone. Could you pick that up for me?"
         c "I don’t do garbage collection."
 
     elif _name == "JavaScript":
@@ -97,7 +96,8 @@ label hackathon_girls:
         player "Wow. Well, what kind of stuff do you like to work on in your free time?"
         py "I like doing maths! I enjoy machine learning as well. Not at the same time though. I can’t multitask."
         player "Seems interesting. Are you planning on doing that for the hackathon?"
-        py "Actually, I want to make a dating sim… where the characters are programmers."
+        py "Actually, I want to make a dating sim..."
+        py "...where the characters are programmers."
         player "Sounds like fun! Good luck!"
 
 
@@ -130,7 +130,23 @@ label hackathon_girls:
         jump hackathon_girls
     else:
         "Now you've met everyone."
-        jump next_time
+        jump saturday
+
+label saturday:
+    $ day.addDay()
+
+    player "Hey, JavaScript! I really liked your idea. Do you want to work together on it?"
+    js "Yea! If you can come up with a name for our framework that’ll be great!"
+    player "How about Broccoli.js?"
+    js "Nah, Broccoli.js already exists."
+    player "Salad.js? Tree.js?"
+    js "I think GreenCauliflower.js will work."
+    player "Great let’s publish it!"
+    js "Okay. But wait, i need to install my dependencies"
+    player "Sure thing. How long will it take?"
+    js "not too long!"
+
+
 
 
 label next_time:
