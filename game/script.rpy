@@ -12,7 +12,7 @@ define player = DynamicCharacter("mcName")
 # Delcare images for the game
 image bg town = "anime-town.jpg"
 image bg hackathon = "qut-hackathon.png"
-image java normal = "java normal.png"
+image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 
 # The game starts here.
 
@@ -48,7 +48,6 @@ label nameMC(girl, girl_img):
         call nameMC(girl, girl_img)
     $ mcName = mcName.rstrip().title()
     
-    girl "Nice to meet you, [mcName]"
     hide girl_img
     return
 
@@ -64,8 +63,7 @@ label hackathon_girls:
 
     if _name == "C":
         if girlsMet != 0:
-            pass
-        player "Hi, I’m [mcName]. What’s your name?"
+            player "Hi, I’m [mcName]. What’s your name?"
         c "Hello, peasant. My name is C%s.U#(v|f`Lu.0U\6T."
         c "Excuse me. I meant my name is C."
         player "Okay. What do you want to work on for the hackathon?"
@@ -76,7 +74,8 @@ label hackathon_girls:
         c "I don’t do garbage collection."
 
     elif _name == "JavaScript":
-        player "Hi, I’m ____. What’s your name?"
+        if girlsMet != 0:
+            player "Hi, I’m [mcName]. What’s your name?"
         js "Hey I’m JavaScript! Nice to meet you!"
         player "Are you related to Java by any chance?"
         js "Are pineapples related to apples?"
@@ -91,8 +90,7 @@ label hackathon_girls:
 
     elif _name == "Python":
         if girlsMet != 0:
-            pass
-        player "Hi, I’m [mcName]. What’s your name?"
+            player "Hi, I’m [mcName]. What’s your name?"
         py "Hey! I’m Python3. You can just call me Python."
         player "3? Do you have a couple older siblings or something?"
         py "Yeah nobody cares about them. I'm the favourite child."
@@ -107,10 +105,9 @@ label hackathon_girls:
     # elif _name == "PHP":
     #     pass
     elif _name == "Java":
-        show java happy
+        show java    
         if girlsMet != 0:
-            pass
-        player "Hi, I'm [mcName]. What's your name?"
+            player "Hi, I'm [mcName]. What's your name?"
         java "Good evening. I'm Java."
         player "I really like your glasses."
         java "Why thank you. I need them because I can't see sharp."
@@ -122,7 +119,7 @@ label hackathon_girls:
         player "Uh, that... sounds good. Could I get your number and chat to you about it."
         java "org.character.java:21: phoneNumber has private access in JavaCharacter"
         player "I'll talk to you later."
-        hide java happy
+        hide java 
     else:
         "Something has went wrong, you shouldn't see this"
         jump hackathon_girls
