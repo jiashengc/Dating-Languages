@@ -1,5 +1,4 @@
 # The script of the game goes in this file.
-
 init python:
     mcName = ""
     girlsMet = 0
@@ -11,7 +10,7 @@ define player = DynamicCharacter("mcName")
 
 # Delcare images for the game
 image bg town = "anime-town.jpg"
-image bg hackathon = "qut-hackathon.png"
+image bg hackathon_start_background = "qut-hackathon.png"
 image java normal = Image("java normal.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image c normal = Image("C.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
 image javascript normal = Image("JavaScript.png", xpos=0.5, xanchor=0.5, ypos=0.8, yanchor=1.0)
@@ -42,6 +41,7 @@ label start:
     jump hackathon_girls
 
 label nameMC(girl, girl_img):
+    scene bg hackathon_start_background
     show image girl_img
 
     girl "Hi! I haven't met you before, what's your name?"
@@ -59,22 +59,26 @@ label hackathon_girls:
     call screen hackathon_girls
 
     $ _name = _return.name
-        
+
+    scene bg hackathon_start_background
+
     if girlsMet == 0:
         call nameMC(_return, "[_name].png")
 
     if _name == "C":
+        show c
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
-        c "Hello, peasant. My name is C%s.U#(v|f`Lu.0U\6T."
+        c "Hello, peasant. My name is C\%s.U#(v|f`Lu.0U\6T."
         c "Excuse me. I meant my name is C."
         player "Okay. What do you want to work on for the hackathon?"
         c "I think I’ll be making a new operating system."
-        player "Ambitious."
-        player "Oh, sorry. I dropped my iPhone. Could you pick that up for me?"
-        c "I don’t do garbage collection."
+        "???" "I accidentally dropped my iPhone. Could you pick that up, C?"
+        c "Sorry. I don’t do garbage collection."
+        hide c
 
     elif _name == "JavaScript":
+        show javascript
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
         js "Hey I’m JavaScript! Nice to meet you!"
@@ -88,8 +92,10 @@ label hackathon_girls:
         player "Sounds like you’ve got everything planned."
         js "Yea! I’ll also be making my own framework during the hack, I promise it’ll be great!"
         player "Yea, sure. I’ll be looking forward to it then."
+        hide javascript
 
     elif _name == "Python":
+        show py
         if girlsMet != 0:
             player "Hi, I’m [mcName]. What’s your name?"
         py "Hey! I’m Python3. You can just call me Python."
@@ -101,23 +107,28 @@ label hackathon_girls:
         py "Actually, I want to make a dating sim..."
         py "...where the characters are programmers."
         player "Sounds like fun! Good luck!"
-
-
-        pass
+        hide py
     # elif _name == "PHP":
     #     pass
     elif _name == "Java":
         show java    
         if girlsMet != 0:
-            java "Good evening. I'm Java. You must be [mcName]."
-        player "Hi! I really like your glasses."
+            player "Hi, I'm [mcName]. What's your name?"
+        voice "voices/java1.ogg"    
+        java "Good evening. I'm Java."
+        player "I really like your glasses."
+        voice "voices/java2.ogg"
         java "Why thank you. I need them because I can't see sharp."
         player "What are you working on this weekend?"
+        voice "voices/java3.ogg"
         java "I'm going to be implementing a port of Minecraft onto Android."
         player "Oh, that sounds-"
+        voice "voices/java4.ogg"
         java "And after that I'll be creating a modification that allows enterprises to flourish."
+        voice "voices/java5.ogg"
         java "by implementing a payroll and human resource managment solution to synergise our business operations."
         player "Uh, that... sounds good. Could I get your number and chat to you about it."
+        voice "voices/java6.ogg"
         java "org.character.java:21: phoneNumber has private access in JavaCharacter"
         player "I'll talk to you later."
         hide java 
@@ -127,10 +138,10 @@ label hackathon_girls:
 
     $ girlsMet += 1
 
-    if girlsMet != 1:
+    if girlsMet != 4:
         jump hackathon_girls
     else:
-        "Now you've met everyone."
+        #"Now you've met everyone."
         jump next_time
 
 
@@ -221,14 +232,14 @@ label next_day:
 #     cp "No, Baka! >:("
 #     jump next_day
 
-# label location_end:
-#     $ prevDay = day.getDay()
-#     $ day.addTime()
+label location_end:
+    $ prevDay = day.getDay()
+    $ day.addTime()
 
-#     if (prevDay == day.getDay()):
-#         call screen town
-#     else:
-#         jump room_location
+    if (prevDay == day.getDay()):
+        call screen qut
+    else:
+        jump room_location
 
 label end:
     # This ends the game.

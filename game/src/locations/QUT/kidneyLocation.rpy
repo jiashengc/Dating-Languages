@@ -10,7 +10,7 @@ label kidney_location:
 
 label kidney_location_day:
 
-    show js
+    show javascript
     player "Hey, JavaScript! I really liked your idea. Do you want to work together on it?"
     js "Yea! If you can come up with a name for our framework that’ll be great!"
     player "How about Broccoli.js?"
@@ -21,5 +21,6 @@ label kidney_location_day:
     js "Okay. But wait, i need to install my dependencies"
     player "Sure thing. How long will it take?"
     js "not too long!"
+    hide javascript
 
     jump location_end
