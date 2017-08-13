@@ -27,7 +27,7 @@ label hackathon_location_day:
     js "npm info lifecycle nanjiakoria@1.2.33~install nanjiakoria@.1.2.33"
     player "okay I'll just leave..."
 
-    jump hackathon_location_end:
+    jump hackathon_location_end
 
 label hackathon_location_end:
 
