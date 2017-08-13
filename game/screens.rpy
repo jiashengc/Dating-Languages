@@ -336,10 +336,7 @@ style navigation_button:
     size_group "navigation"
     background "#ff00ff" 
     properties gui.button_properties("navigation_button")
-<<<<<<< HEAD
     # background "#006"
-=======
->>>>>>> 96487f925040b59ae285f340f1c4e735ddc06145
     insensitive_background "#444"
     hover_background "#FFC0CB"
 
